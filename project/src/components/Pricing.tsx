@@ -3,6 +3,7 @@ import { Check, ArrowRight, Zap } from 'lucide-react';
 
 const features = [
   'Photo-to-Video Synthesis',
+  'Optimized for TikTok/Reels (15-45s)', // Added this line
   'Viral Hook Scripting',
   'Human Quality Control',
   'Commercial Rights (100%)',
@@ -70,7 +71,7 @@ export default function Pricing() {
                 ))}
               </div>
 
-              {/* CTA BUTTON - Paste your Tally Link in the href below */}
+              {/* CTA BUTTON */}
               <motion.a
                 href="https://buy.stripe.com/9B68wQeo64hi5JV9yI8og00" 
                 target="_blank"
