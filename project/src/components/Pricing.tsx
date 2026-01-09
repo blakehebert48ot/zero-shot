@@ -47,7 +47,7 @@ export default function Pricing() {
                 </div>
                 <div className="text-right">
                   <div className="text-5xl font-bold text-brand-text">$150</div>
-                  <span className="text-gray-500 font-mono text-sm">ONE_TIME</span>
+                  
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ export default function Pricing() {
 
               {/* CTA BUTTON - Paste your Tally Link in the href below */}
               <motion.a
-                href="https://tally.so/r/VLQAzN" 
+                href="https://buy.stripe.com/9B68wQeo64hi5JV9yI8og00" 
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
