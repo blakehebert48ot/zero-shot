@@ -13,10 +13,10 @@ export default function VideoDemo() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-brand-text mb-6">
-            See It In Action
+            Real Results. <span className="text-brand-blue">Zero Filming.</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Watch how we transform raw footage into conversion-crushing creative assets in real-time.
+            Watch how we turn static product photos and scripts into high-retention video ads. 
           </p>
         </motion.div>
 
@@ -50,6 +50,7 @@ export default function VideoDemo() {
                 muted
                 loop
                 playsInline
+                preload="auto"
                 controls={false} // Clean look (no controls)
               >
                 <source src="/demo-video.mp4" type="video/mp4" />
@@ -73,12 +74,12 @@ export default function VideoDemo() {
             whileTap={{ scale: 0.95 }}
             className="relative group px-10 py-5 bg-brand-blue hover:bg-blue-600 text-white font-semibold text-lg rounded-xl transition-all duration-300 inline-flex items-center gap-3 cursor-pointer"
           >
-            <span>Get Access Now</span>
+            <span>Start Order</span>
             <Play className="w-5 h-5" />
           </motion.a>
 
           <p className="text-gray-600 font-mono text-sm mt-6">
-            Join 500+ creators already using Zero Shot
+            Stop shipping products to creators. Start generating.
           </p>
         </div>
       </div>
