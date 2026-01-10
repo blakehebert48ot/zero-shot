@@ -11,14 +11,14 @@ const steps = [
   {
     icon: Sparkles,
     label: 'STEP_02',
-    title: 'AI Synthesis',
-    description: 'We write a high-retention script and use generative AI to animate your images into a hyper-realistic video ad.',
+    title: 'We Engineer the Viral Hook', // Updated Copy
+    description: 'We write the script, animate the motion, and edit the final cut using our proprietary AI pipeline.',
   },
   {
     icon: Download,
     label: 'STEP_03',
-    title: 'Receive Asset',
-    description: 'Get a fully finished, viral-ready video asset delivered to your inbox. Ready to post on TikTok, Reels, or Shorts.',
+    title: 'Ready to Launch', // Updated Copy
+    description: 'Get a fully finished, watermark-free video delivered to your inbox in 24 hours.',
   },
 ];
 
@@ -50,7 +50,8 @@ export default function HowItWorks() {
               {/* This is the gradient style you liked */}
               <div className="border border-gray-800 rounded-2xl p-8 hover:border-brand-blue/50 transition-all duration-300 bg-gradient-to-b from-gray-900/50 to-transparent backdrop-blur-sm h-full">
                 <div className="flex items-center justify-between mb-6">
-                  <span className="font-mono text-xs text-gray-600 group-hover:text-brand-blue transition-colors">{step.label}</span>
+                  {/* CHANGED: Made text blue and slightly bolder */}
+                  <span className="font-mono text-sm text-brand-blue font-bold tracking-widest">{step.label}</span>
                   <div className="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center group-hover:bg-brand-blue/20 transition-colors duration-300">
                     <step.icon className="w-6 h-6 text-brand-blue" />
                   </div>
