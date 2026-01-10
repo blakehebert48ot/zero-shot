@@ -47,7 +47,7 @@ export default function Pricing() {
                   <h3 className="text-3xl font-bold text-brand-text">Single Asset</h3>
                 </div>
                 <div className="text-right">
-                  <div className="text-5xl font-bold text-brand-text">$150</div>
+                  <div className="text-5xl font-bold text-brand-text">$45</div>
                   
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function Pricing() {
 
               {/* CTA BUTTON */}
               <motion.a
-                href="https://buy.stripe.com/9B68wQeo64hi5JV9yI8og00" 
+                href="https://buy.stripe.com/6oUbJ2gwe3dec8jbGQ8og01" 
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}

@@ -129,7 +129,7 @@ export default function BentoGrid() {
                   <Check className="w-3.5 h-3.5 text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-bold">$150 Flat Rate</p>
+                  <p className="text-white font-bold">$45 Flat Rate</p>
                   <p className="text-gray-400 text-sm mt-1">Pay per asset. No contracts. No nonsense.</p>
                 </div>
               </div>
