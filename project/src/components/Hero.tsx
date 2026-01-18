@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
-          <span className="text-green-500 text-sm font-medium tracking-wide">ACCEPTING NEW CLIENTS</span>
+          <span className="text-green-500 text-sm font-medium tracking-wide">LIMITED BETA: BATCH 1 OPEN</span>
         </motion.div>
 
         {/* Headlines */}
@@ -33,11 +33,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-6xl md:text-8xl font-bold tracking-tight leading-tight mb-8"
         >
-          <span className="text-white">High-Performance</span>
+          <span className="text-white">Viral UGC Ads.</span>
           <br />
-          <span className="text-brand-blue">Video Assets.</span>
-          <br />
-          <span className="text-white">Zero Friction.</span>
+          <span className="text-brand-blue">Zero Filming.</span>
         </motion.h1>
 
         <motion.p
@@ -46,7 +44,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gray-400 text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          Stop filming, start selling. We create viral-ready AI video creatives instantly. Zero footage needed, 100% conversion-focused.
+          Stop shipping products to creators. We generate 3 high-converting video ads for your brand in 24 hours using next-gen AI. 100% conversion-focused.
         </motion.p>
 
         {/* BUTTONS SECTION */}
@@ -61,7 +59,7 @@ export default function Hero() {
             href="#pricing"
             className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
           >
-            Get Started ($45)
+            Get Tester Pack ($45)
             <ArrowRight className="w-5 h-5" />
           </a>
 

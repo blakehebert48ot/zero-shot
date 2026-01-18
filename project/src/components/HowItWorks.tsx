@@ -5,20 +5,20 @@ const steps = [
   {
     icon: Image,
     label: 'STEP_01',
-    title: 'Upload Product Photos',
-    description: 'Just send us high-quality static images of your product. No filming, no lighting setup, no raw footage needed.',
+    title: '1. Upload Assets',
+    description: 'Send us a product URL or a few photos. No shipping required. We work with what you have.',
   },
   {
     icon: Sparkles,
     label: 'STEP_02',
-    title: 'We Engineer the Viral Hook', // Updated Copy
-    description: 'We write the script, animate the motion, and edit the final cut using our proprietary AI pipeline.',
+    title: '2. We Generate Variations',
+    description: 'We script and generate 3 unique viral hooks designed to stop the scroll and lower your CPA.',
   },
   {
     icon: Download,
     label: 'STEP_03',
-    title: 'Ready to Launch', // Updated Copy
-    description: 'Get a fully finished, watermark-free video delivered to your inbox in 24 hours.',
+    title: '3. Launch & Scale',
+    description: 'Download your ads tomorrow. 100% usage rights. Drag and drop them straight into TikTok Ads Manager.',
   },
 ];
 
@@ -33,8 +33,9 @@ export default function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="font-mono text-sm text-brand-blue tracking-wider">ZERO FOOTAGE REQUIRED</span>
-          <h2 className="text-5xl md:text-6xl font-bold text-brand-text mt-4">Static to Viral.</h2>
+          {/* NEW HEADLINE COPY */}
+          <span className="font-mono text-sm text-brand-blue tracking-wider">NO SHIPPING • NO WAITING</span>
+          <h2 className="text-5xl md:text-6xl font-bold text-brand-text mt-4">From Photo to Ad in 24 Hours.</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

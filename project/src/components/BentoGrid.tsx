@@ -114,23 +114,25 @@ export default function BentoGrid() {
                 </div>
               </div>
 
+              {/* UPDATED POINT 3 */}
               <div className="flex items-start gap-4">
                 <div className="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-brand-blue/30">
                   <Check className="w-3.5 h-3.5 text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-bold">Studio Perfection</p>
-                  <p className="text-gray-400 text-sm mt-1">Optimized lighting, fluid motion, and viral scripting.</p>
+                  <p className="text-white font-bold">3 Unique Variations</p>
+                  <p className="text-gray-400 text-sm mt-1">We test 3 different hooks to find your winner.</p>
                 </div>
               </div>
 
+              {/* UPDATED POINT 4 (Price Anchor) */}
               <div className="flex items-start gap-4">
                 <div className="w-6 h-6 rounded-full bg-brand-blue flex items-center justify-center flex-shrink-0 mt-0.5 shadow-lg shadow-brand-blue/30">
                   <Check className="w-3.5 h-3.5 text-white" />
                 </div>
                 <div>
-                  <p className="text-white font-bold">$45 Flat Rate</p>
-                  <p className="text-gray-400 text-sm mt-1">Pay per asset. No contracts. No nonsense.</p>
+                  <p className="text-white font-bold">$15 Per Ad</p>
+                  <p className="text-gray-400 text-sm mt-1">Sold as a $45 Tester Pack. No contracts.</p>
                 </div>
               </div>
             </div>

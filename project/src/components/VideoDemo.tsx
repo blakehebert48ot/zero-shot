@@ -12,11 +12,14 @@ export default function VideoDemo() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
+          {/* NEW HEADLINE */}
           <h2 className="text-5xl md:text-6xl font-bold text-brand-text mb-6">
-            Real Results. <span className="text-brand-blue">Zero Filming.</span>
+            Viral Quality. <span className="text-brand-blue">Zero Filming.</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Watch how we turn static product photos and scripts into high-retention video ads. 
+          
+          {/* NEW SUB-HEADLINE */}
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            See why top sellers are switching to AI. We generate scroll-stopping hooks and perfect lighting without you ever shipping a product.
           </p>
         </motion.div>
 
@@ -37,7 +40,7 @@ export default function VideoDemo() {
             {/* Aspect Ratio Container */}
             <div className="aspect-[9/16] bg-gray-900 relative">
               
-              {/* LIVE BADGE (Now Inside) */}
+              {/* LIVE BADGE */}
               <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 font-mono text-[10px] text-white/90">
                 <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></div>
                 LIVE_PREVIEW
@@ -72,12 +75,14 @@ export default function VideoDemo() {
             transition={{ duration: 0.6, delay: 0.4 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="relative group px-10 py-5 bg-brand-blue hover:bg-blue-600 text-white font-semibold text-lg rounded-xl transition-all duration-300 inline-flex items-center gap-3 cursor-pointer"
+            className="relative group px-10 py-5 bg-brand-blue hover:bg-blue-600 text-white font-semibold text-lg rounded-xl transition-all duration-300 inline-flex items-center gap-3 cursor-pointer shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
           >
-            <span>Start Order</span>
-            <Play className="w-5 h-5" />
+            {/* NEW BUTTON TEXT */}
+            <span>Get This Exact Style ($45)</span>
+            <Play className="w-5 h-5 fill-current" />
           </motion.a>
 
+          {/* MICRO COPY (KEPT THE SAME) */}
           <p className="text-gray-600 font-mono text-sm mt-6">
             Stop shipping products to creators. Start generating.
           </p>
