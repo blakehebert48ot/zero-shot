@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 
-export default function Hero() {
+// 1. Accept the prop to trigger the popup
+export default function Hero({ onOpenVSL }: { onOpenVSL?: () => void }) {
   return (
     <div className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-brand-black">
       {/* Background Gradients */}
@@ -12,7 +13,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         
-        {/* The New Trust Badge */}
+        {/* Trust Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -59,18 +60,18 @@ export default function Hero() {
             href="#pricing"
             className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
           >
-            Get Tester Pack ($45)
+            Get Tester Pack ($99)
             <ArrowRight className="w-5 h-5" />
           </a>
 
-          {/* New Secondary Button */}
-          <a
-            href="#demo"
-            className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+          {/* Secondary Button - UPDATED to open VSL Popup */}
+          <button
+            onClick={onOpenVSL}
+            className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm cursor-pointer"
           >
             <Play className="w-5 h-5 fill-current" />
-            Watch Sample
-          </a>
+            See How It Works
+          </button>
         </motion.div>
 
         {/* Footer info */}

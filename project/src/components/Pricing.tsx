@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, ArrowRight, Zap, Clock, PlayCircle } from 'lucide-react';
+import { Check, ArrowRight, Zap, Clock } from 'lucide-react';
 
 // UPDATED FEATURES TO SELL "FULL LENGTH" & "FINISHED"
 const features = [
@@ -9,7 +9,7 @@ const features = [
   },
   {
     text: 'Fully Edited & Ready to Post',
-    subtext: 'Includes viral hooks, music, captions, and transitions.'
+    
   },
   {
     text: 'Optimized for TikTok/Reels (9:16)',
