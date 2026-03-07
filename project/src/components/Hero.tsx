@@ -60,7 +60,7 @@ export default function Hero({ onOpenVSL }: { onOpenVSL?: () => void }) {
             href="#pricing"
             className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
           >
-            Get Tester Pack ($99)
+            Get Tester Pack ($45)
             <ArrowRight className="w-5 h-5" />
           </a>
 
