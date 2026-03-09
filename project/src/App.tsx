@@ -1,16 +1,14 @@
-import { useState } from 'react'; // <--- 1. Import State
+import { useState } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import VideoDemo from './components/VideoDemo';
 import HowItWorks from './components/HowItWorks';
 import BentoGrid from './components/BentoGrid';
 import Pricing from './components/Pricing';
-import VSLModal from './components/VSLModal'; // <--- 2. Import the Popup
+import VSLModal from './components/VSLModal';
 
 function App() {
   const currentYear = new Date().getFullYear();
-  
-  // 3. This little piece of state remembers if the popup is Open or Closed
   const [isVSLOpen, setIsVSLOpen] = useState(false);
 
   return (
@@ -20,10 +18,8 @@ function App() {
       <div className="relative">
         <Navigation />
         
-        {/* 4. Pass the "Open" command to the Hero Button */}
         <Hero onOpenVSL={() => setIsVSLOpen(true)} />
         
-        {/* The Silent Loop (Eye Candy) */}
         <div id="demo">
           <VideoDemo />
         </div>
@@ -44,18 +40,15 @@ function App() {
               </span>
             </div>
 
-            <div className="flex items-center gap-8 text-gray-600 font-mono text-sm">
-              <a 
-                href="mailto:blake@zeroshot.ai" 
-                className="hover:text-brand-blue transition-colors duration-200"
-              >
-                Contact
-              </a>
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-gray-600 font-mono text-sm">
+              <span className="text-gray-400">Founder & Lead Developer: Blake Hebert</span>
+              <span className="text-gray-400 select-all cursor-text">
+                Contact: zeroshotagency@gmail.com
+              </span>
             </div>
           </div>
         </footer>
 
-        {/* 5. The actual Popup Component (Hidden until clicked) */}
         <VSLModal isOpen={isVSLOpen} onClose={() => setIsVSLOpen(false)} />
       </div>
     </div>
