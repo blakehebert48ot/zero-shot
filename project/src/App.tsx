@@ -28,6 +28,19 @@ function App() {
         <BentoGrid />
         <Pricing />
 
+        {/* --- SYSTEM ARCHITECTURE DISCLAIMER --- */}
+        <section className="w-full bg-brand-black py-16 px-6 border-t border-gray-900/50">
+          <div className="max-w-4xl mx-auto text-center space-y-4">
+            <h3 className="text-gray-400 font-mono text-sm uppercase tracking-widest">
+              System Architecture & Automation
+            </h3>
+            <p className="text-gray-500 text-sm leading-relaxed max-w-2xl mx-auto">
+              Zero Shot is a fully automated AI video generation pipeline engineered by lead developer Blake Hebert. While the storefront utilizes AI-generated avatars and voice cloning for initial marketing demonstrations, the core infrastructure—spanning the React frontend, Stripe payment routing, and multi-model asset generation—is a custom-built system designed for rapid creative scaling.
+            </p>
+          </div>
+        </section>
+        {/* -------------------------------------- */}
+
         <footer className="border-t border-gray-900/50 bg-black py-12 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
