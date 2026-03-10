@@ -103,7 +103,7 @@ export default function Pricing() {
 
               {/* CTA BUTTON */}
               <motion.a
-                href="https://buy.stripe.com/6oUbJ2gwe3dec8jbGQ8og01" // <--- CHECK THIS LINK
+                href="https://tally.so/r/VLQAzN" // <--- CHECK THIS LINK
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
