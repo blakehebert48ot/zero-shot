@@ -4,19 +4,19 @@ import { Image, Sparkles, Download } from 'lucide-react';
 const steps = [
   {
     icon: Image,
-    label: 'STEP_01',
+    label: 'STEP 1',
     title: '1. Upload Assets',
     description: 'Send us a product URL or a few static photos. No shipping products to creators or waiting on shoots.',
   },
   {
     icon: Sparkles,
-    label: 'STEP_02',
+    label: 'STEP 2',
     title: '2. We Generate Variations',
     description: 'Our AI pipeline turns static photos into full-motion video ads. We handle the scripting, AI voice cloning, and dynamic editing.',
   },
   {
     icon: Download,
-    label: 'STEP_03',
+    label: 'STEP 3',
     title: '3. Launch & Scale',
     description: 'Download your ads tomorrow. 100% usage rights. Drag and drop them straight into Facebook Ads Manager.',
   },
