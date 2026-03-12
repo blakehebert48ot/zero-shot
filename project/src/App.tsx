@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import VideoDemo from './components/VideoDemo';
@@ -17,7 +18,12 @@ function App() {
 
   // If they are on the Squeeze Page, return ONLY the Squeeze Page (No Nav, No Footer)
   if (path === '/skincare-hook') {
-    return <SkincareHook />;
+    return (
+      <>
+        <SkincareHook />
+        <Analytics />
+      </>
+    );
   }
 
   // Otherwise, return the main website exactly as you built it
@@ -73,6 +79,7 @@ function App() {
         </footer>
 
         <VSLModal isOpen={isVSLOpen} onClose={() => setIsVSLOpen(false)} />
+        <Analytics />
       </div>
     </div>
   );
