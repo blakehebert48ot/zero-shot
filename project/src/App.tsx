@@ -6,11 +6,21 @@ import HowItWorks from './components/HowItWorks';
 import BentoGrid from './components/BentoGrid';
 import Pricing from './components/Pricing';
 import VSLModal from './components/VSLModal';
+import SkincareHook from './components/SkincareHook';
 
 function App() {
   const currentYear = new Date().getFullYear();
   const [isVSLOpen, setIsVSLOpen] = useState(false);
+  
+  // URL Sniffer: Checks if the user is on the Squeeze Page route
+  const path = window.location.pathname;
 
+  // If they are on the Squeeze Page, return ONLY the Squeeze Page (No Nav, No Footer)
+  if (path === '/skincare-hook') {
+    return <SkincareHook />;
+  }
+
+  // Otherwise, return the main website exactly as you built it
   return (
     <div className="min-h-screen bg-brand-black text-brand-text overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_50%)]"></div>
