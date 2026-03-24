@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Play } from 'lucide-react';
 
-export default function SkincareHook() {
+export default function Sample() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 px-6 relative overflow-hidden">
       {/* Background Glow */}
@@ -10,34 +10,44 @@ export default function SkincareHook() {
       <div className="max-w-6xl w-full mx-auto relative z-10 flex flex-col items-center">
         
         {/* Headers */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="font-mono text-sm text-blue-500 tracking-wider uppercase mb-4 block">
-            Competitor Case Study
-          </span>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        <div className="text-center mb-12 mt-8">
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="font-mono text-sm text-blue-500 tracking-wider uppercase mb-4 block"
+          >
+            Zero Shot Agency: Competitor Case Study
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl md:text-6xl font-bold mb-6"
+          >
             Viral Quality. <span className="text-blue-500">Zero Filming.</span>
-          </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            See how we generate scroll-stopping UGC for Skincare brands without shipping a product.
-          </p>
-        </motion.div>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
+          >
+            We turn your static product photos into hyper-realistic UGC video ads in 24 hours. No shipping. No creators. No waiting.
+          </motion.p>
+        </div>
 
         {/* PHONE CONTAINER WRAPPER */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="relative group mb-12 w-full max-w-[320px] mx-auto"
         >
           {/* Background Ambient Glow */}
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-500 to-blue-600 rounded-[3rem] opacity-20 group-hover:opacity-40 blur-3xl transition-all duration-500"></div>
 
-          {/* THE PHONE FRAME (Thick Borders) */}
+          {/* THE PHONE FRAME */}
           <div className="relative bg-black rounded-[2.5rem] overflow-hidden border-[8px] border-gray-900 shadow-2xl z-10">
             
             {/* Aspect Ratio Container */}
@@ -45,18 +55,17 @@ export default function SkincareHook() {
               
               {/* LIVE BADGE */}
               <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 font-mono text-[10px] text-white/90">
-                <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></div>
-                LIVE_PREVIEW
+                <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+                LIVE UGC DEMO
               </div>
 
-              {/* VIDEO - SOURCED TO SAMPLE-VIDEO.MP4 */}
+              {/* VIDEO - AutoPlay removed so they must click play to hear audio properly */}
               <video
                 className="w-full h-full object-cover"
-                autoPlay
-                muted={false}
                 loop
                 playsInline
                 controls={true}
+                preload="metadata"
               >
                 <source src="/sample-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -68,8 +77,8 @@ export default function SkincareHook() {
           </div>
         </motion.div>
 
-        {/* The Only Exit: Tally Payment Button */}
-        <div className="text-center w-full mt-4">
+        {/* The Checkout Button */}
+        <div className="text-center w-full mt-2">
           <motion.a
             href="https://tally.so/r/VLQAzN"
             target="_blank"
@@ -95,6 +104,18 @@ export default function SkincareHook() {
             24H Delivery • Full Ownership
           </motion.p>
         </div>
+
+        {/* Trust Footer / Escape Hatch */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-16 pt-8 border-t border-gray-800 w-full text-center"
+        >
+          <p className="text-gray-600 text-sm">
+            © 2026 Zero Shot Agency. <a href="/" className="text-gray-400 hover:text-white transition-colors underline decoration-gray-700 underline-offset-4">Visit Main Website</a>
+          </p>
+        </motion.div>
 
       </div>
     </div>

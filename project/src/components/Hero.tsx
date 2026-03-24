@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 
-// 1. Accept the prop to trigger the popup
-export default function Hero({ onOpenVSL }: { onOpenVSL?: () => void }) {
+export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-brand-black">
       {/* Background Gradients */}
@@ -55,23 +54,25 @@ export default function Hero({ onOpenVSL }: { onOpenVSL?: () => void }) {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          {/* Primary Button */}
+          {/* Primary Button - Direct to Checkout */}
           <a
-            href="#pricing"
+            href="https://tally.so/r/VLQAzN"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
           >
             Get Tester Pack ($45)
             <ArrowRight className="w-5 h-5" />
           </a>
 
-          {/* Secondary Button - UPDATED to open VSL Popup */}
-          <button
-            onClick={onOpenVSL}
+          {/* Secondary Button - Direct to Skincare Demo Page */}
+          <a
+            href="/Sample"
             className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm cursor-pointer"
           >
             <Play className="w-5 h-5 fill-current" />
-            See How It Works
-          </button>
+            Watch Quality Sample
+          </a>
         </motion.div>
 
         {/* Footer info */}

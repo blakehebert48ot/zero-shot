@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
@@ -6,21 +5,20 @@ import VideoDemo from './components/VideoDemo';
 import HowItWorks from './components/HowItWorks';
 import BentoGrid from './components/BentoGrid';
 import Pricing from './components/Pricing';
-import VSLModal from './components/VSLModal';
-import SkincareHook from './components/SkincareHook';
+import Skincare from './components/Sample';
 
 function App() {
   const currentYear = new Date().getFullYear();
-  const [isVSLOpen, setIsVSLOpen] = useState(false);
   
   // URL Sniffer: Checks if the user is on the Squeeze Page route
   const path = window.location.pathname;
 
   // If they are on the Squeeze Page, return ONLY the Squeeze Page (No Nav, No Footer)
-  if (path === '/skincare-hook') {
+  // Updated to /skincare for a more professional URL
+  if (path === '/Sample') {
     return (
       <>
-        <SkincareHook />
+        <Skincare />
         <Analytics />
       </>
     );
@@ -34,7 +32,8 @@ function App() {
       <div className="relative">
         <Navigation />
         
-        <Hero onOpenVSL={() => setIsVSLOpen(true)} />
+        {/* Error Fixed: Prop 'onOpenVSL' removed to match Hero.tsx component definition */}
+        <Hero />
         
         <div id="demo">
           <VideoDemo />
@@ -78,7 +77,6 @@ function App() {
           </div>
         </footer>
 
-        <VSLModal isOpen={isVSLOpen} onClose={() => setIsVSLOpen(false)} />
         <Analytics />
       </div>
     </div>
