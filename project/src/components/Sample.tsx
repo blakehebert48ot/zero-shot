@@ -53,7 +53,7 @@ export default function Sample() {
               {/* UPDATED BADGE: System vibe instead of marketing vibe */}
               <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 font-mono text-[10px] text-white/90">
                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
-                STANDARD_OUTPUT_V1
+                SYSTEM_SAMPLE_V1
               </div>
 
               <video
