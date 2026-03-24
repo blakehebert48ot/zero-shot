@@ -17,7 +17,7 @@ export default function Sample() {
             transition={{ duration: 0.6 }}
             className="font-mono text-sm text-blue-500 tracking-wider uppercase mb-4 block"
           >
-            Zero Shot Agency: Competitor Case Study
+            Zero Shot Agency: System Case Study
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
@@ -50,12 +50,12 @@ export default function Sample() {
             
             <div className="aspect-[9/16] bg-gray-900 relative">
               
+              {/* UPDATED BADGE: System vibe instead of marketing vibe */}
               <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 font-mono text-[10px] text-white/90">
                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
-                LIVE UGC DEMO
+                STANDARD_OUTPUT_V1
               </div>
 
-              {/* VIDEO - Fullscreen and PiP Disabled */}
               <video
                 className="w-full h-full object-cover"
                 loop
