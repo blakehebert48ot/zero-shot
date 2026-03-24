@@ -44,34 +44,31 @@ export default function Sample() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="relative group mb-12 w-full max-w-[320px] mx-auto"
         >
-          {/* Background Ambient Glow */}
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-500 to-blue-600 rounded-[3rem] opacity-20 group-hover:opacity-40 blur-3xl transition-all duration-500"></div>
 
-          {/* THE PHONE FRAME */}
           <div className="relative bg-black rounded-[2.5rem] overflow-hidden border-[8px] border-gray-900 shadow-2xl z-10">
             
-            {/* Aspect Ratio Container */}
             <div className="aspect-[9/16] bg-gray-900 relative">
               
-              {/* LIVE BADGE */}
               <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 font-mono text-[10px] text-white/90">
                 <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
                 LIVE UGC DEMO
               </div>
 
-              {/* VIDEO - AutoPlay removed so they must click play to hear audio properly */}
+              {/* VIDEO - Fullscreen and PiP Disabled */}
               <video
                 className="w-full h-full object-cover"
                 loop
                 playsInline
-                controls={true}
+                controls
+                controlsList="nofullscreen"
+                disablePictureInPicture
                 preload="metadata"
               >
                 <source src="/sample-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
-              {/* Reflection/Gradient Overlay for depth */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
             </div>
           </div>
@@ -94,7 +91,6 @@ export default function Sample() {
             <Play className="w-5 h-5 fill-current" />
           </motion.a>
 
-          {/* MICRO COPY */}
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -105,7 +101,6 @@ export default function Sample() {
           </motion.p>
         </div>
 
-        {/* Trust Footer / Escape Hatch */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
