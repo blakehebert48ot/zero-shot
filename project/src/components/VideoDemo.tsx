@@ -13,7 +13,7 @@ export default function VideoDemo() {
           className="text-center mb-16"
         >
           {/* NEW HEADLINE */}
-          <h2 className="text-5xl md:text-6xl font-bold text-brand-text mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Viral Quality. <span className="text-brand-blue">Zero Filming.</span>
           </h2>
           
@@ -66,7 +66,7 @@ export default function VideoDemo() {
           </div>
         </motion.div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 flex flex-col items-center">
           <motion.a
             href="#pricing"
             initial={{ opacity: 0, y: 20 }}
@@ -81,6 +81,22 @@ export default function VideoDemo() {
             <span>Get This Exact Style ($45)</span>
             <Play className="w-5 h-5 fill-current" />
           </motion.a>
+
+          {/* NEW: Conversion Anchor & Risk Reversal */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-4 flex flex-col items-center gap-1.5"
+          >
+            <p className="text-gray-400 text-sm font-medium">
+              Early Access Beta Rate. <span className="line-through text-gray-600 mx-1">$150</span> <span className="text-white font-bold">$45</span>
+            </p>
+            <p className="text-green-500 text-sm font-bold tracking-wide">
+              Zero Risk: If you don't love all 3 ads, we redo them free.
+            </p>
+          </motion.div>
 
           {/* MICRO COPY (KEPT THE SAME) */}
           <p className="text-gray-600 font-mono text-sm mt-6">

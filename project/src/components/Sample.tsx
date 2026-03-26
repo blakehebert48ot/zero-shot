@@ -74,8 +74,8 @@ export default function Sample() {
           </div>
         </motion.div>
 
-        {/* The Checkout Button */}
-        <div className="text-center w-full mt-2">
+        {/* The Checkout Button Section */}
+        <div className="text-center w-full mt-2 flex flex-col items-center">
           <motion.a
             href="https://tally.so/r/VLQAzN"
             target="_blank"
@@ -90,6 +90,21 @@ export default function Sample() {
             <span>Get 3 Full Ads ($45)</span>
             <Play className="w-5 h-5 fill-current" />
           </motion.a>
+
+          {/* NEW: Conversion Anchor & Risk Reversal */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-4 flex flex-col items-center gap-1.5"
+          >
+            <p className="text-gray-400 text-sm font-medium">
+              Early Access Beta Rate. <span className="line-through text-gray-600 mx-1">$150</span> <span className="text-white font-bold">$45</span>
+            </p>
+            <p className="text-green-500 text-sm font-bold tracking-wide">
+              Zero Risk: If you don't love all 3 ads, we redo them free.
+            </p>
+          </motion.div>
 
           <motion.p 
             initial={{ opacity: 0 }}

@@ -52,27 +52,34 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center justify-center gap-3 w-full"
         >
-          {/* Primary Button - Direct to Checkout */}
-          <a
-            href="https://tally.so/r/VLQAzN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
-          >
-            Get Tester Pack ($45)
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+            {/* Primary Button - Direct to Checkout */}
+            <a
+              href="https://tally.so/r/VLQAzN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-brand-blue hover:bg-blue-600 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
+            >
+              Get Tester Pack ($45)
+              <ArrowRight className="w-5 h-5" />
+            </a>
 
-          {/* Secondary Button - Direct to Skincare Demo Page */}
-          <a
-            href="/Sample"
-            className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm cursor-pointer"
-          >
-            <Play className="w-5 h-5 fill-current" />
-            View Standard Sample
-          </a>
+            {/* Secondary Button - Direct to Skincare Demo Page */}
+            <a
+              href="/Sample"
+              className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-white rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm cursor-pointer"
+            >
+              <Play className="w-5 h-5 fill-current" />
+              View Standard Sample
+            </a>
+          </div>
+          
+          {/* Conversion Anchor */}
+          <p className="text-gray-400 text-sm mt-2 font-medium">
+            Early Access Beta Rate. <span className="line-through text-gray-600 mx-1">$150</span> <span className="text-white font-bold">$45</span>
+          </p>
         </motion.div>
 
         {/* Footer info */}

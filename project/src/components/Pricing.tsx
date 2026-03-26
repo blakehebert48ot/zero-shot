@@ -9,7 +9,7 @@ const features = [
   },
   {
     text: 'Fully Edited & Ready to Post',
-    
+    subtext: null
   },
   {
     text: 'Optimized for TikTok/Reels (9:16)',
@@ -37,7 +37,7 @@ export default function Pricing() {
           className="text-center mb-20"
         >
           <span className="font-mono text-sm text-brand-blue tracking-wider">FLAT RATE PRICING</span>
-          <h2 className="text-5xl md:text-6xl font-bold text-brand-text mt-4">Simple. Transparent.</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mt-4">Simple. Transparent.</h2>
           <p className="text-gray-400 mt-4 text-lg">No monthly retainers. Just pay per batch.</p>
         </motion.div>
 
@@ -63,15 +63,17 @@ export default function Pricing() {
                       MOST POPULAR
                     </span>
                   </div>
-                  <h3 className="text-3xl font-bold text-brand-text">Viral Tester Pack</h3>
+                  <h3 className="text-3xl font-bold text-white">Viral Tester Pack</h3>
                   <div className="flex items-center gap-2 mt-2 text-green-400 text-sm font-medium">
                     <Clock className="w-4 h-4" />
                     <span>15-45 Seconds Per Ad</span>
                   </div>
                 </div>
+                {/* UPDATED PRICING BLOCK */}
                 <div className="text-right">
-                  <div className="text-5xl font-bold text-brand-text">$45</div>
-                  <div className="text-gray-500 text-xs font-mono mt-1">/ 3 FULL ADS</div>
+                  <div className="text-5xl font-bold text-white">$45</div>
+                  <div className="text-brand-blue font-bold text-sm mt-1 uppercase tracking-wider">Beta Rate</div>
+                  <div className="text-gray-500 text-xs font-mono mt-1 line-through">Normally $150</div>
                 </div>
               </div>
 
@@ -103,7 +105,7 @@ export default function Pricing() {
 
               {/* CTA BUTTON */}
               <motion.a
-                href="https://tally.so/r/VLQAzN" // <--- CHECK THIS LINK
+                href="https://tally.so/r/VLQAzN"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
@@ -114,14 +116,20 @@ export default function Pricing() {
                 <ArrowRight className="w-5 h-5 group-hover/button:translate-x-1 transition-transform duration-300" />
               </motion.a>
 
-              <div className="mt-6 text-center">
-                <p className="text-gray-500 text-sm font-mono flex items-center justify-center gap-2 mb-1">
-                  <Zap className="w-4 h-4 text-yellow-500 fill-yellow-500" />
-                  DELIVERED IN 24 HOURS
+              {/* UPDATED FOOTER / GUARANTEE */}
+              <div className="mt-6 text-center flex flex-col items-center gap-3">
+                <p className="text-green-500 text-sm font-bold tracking-wide">
+                  Zero Risk: If you don't love all 3 ads, we redo them free.
                 </p>
-                <p className="text-xs text-green-500 font-bold tracking-wide uppercase">
-                  ONE-TIME PAYMENT • NO SUBSCRIPTION
-                </p>
+                <div>
+                  <p className="text-gray-500 text-sm font-mono flex items-center justify-center gap-2 mb-1">
+                    <Zap className="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                    DELIVERED IN 24 HOURS
+                  </p>
+                  <p className="text-xs text-gray-500 font-bold tracking-wide uppercase">
+                    ONE-TIME PAYMENT • NO SUBSCRIPTION
+                  </p>
+                </div>
               </div>
               
             </div>
