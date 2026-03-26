@@ -5,7 +5,7 @@ import { Check, ArrowRight, Zap, Clock } from 'lucide-react';
 const features = [
   {
     text: '3 Full-Length Video Ads',
-    subtext: 'We don\'t do short clips. You get complete 15-45s commercials.'
+    subtext: 'We don\'t do short clips. You get complete 15-25s commercials.'
   },
   {
     text: 'Fully Edited & Ready to Post',
@@ -66,7 +66,7 @@ export default function Pricing() {
                   <h3 className="text-3xl font-bold text-white">Viral Tester Pack</h3>
                   <div className="flex items-center gap-2 mt-2 text-green-400 text-sm font-medium">
                     <Clock className="w-4 h-4" />
-                    <span>15-45 Seconds Per Ad</span>
+                    <span>15-25 Seconds Per Ad</span>
                   </div>
                 </div>
                 {/* UPDATED PRICING BLOCK */}
