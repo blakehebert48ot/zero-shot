@@ -10,12 +10,11 @@ import Skincare from './components/Sample';
 function App() {
   const currentYear = new Date().getFullYear();
   
-  // URL Sniffer: Checks if the user is on the Squeeze Page route
-  const path = window.location.pathname;
+  // BULLETPROOF URL SNIFFER
+  // Forces lowercase and removes trailing slashes so '/Sample', '/sample', and '/Sample/' all route correctly.
+  const path = window.location.pathname.toLowerCase().replace(/\/$/, "");
 
-  // If they are on the Squeeze Page, return ONLY the Squeeze Page (No Nav, No Footer)
-  // Updated to /skincare for a more professional URL
-  if (path === '/Sample') {
+  if (path === '/sample') {
     return (
       <>
         <Skincare />
@@ -32,7 +31,6 @@ function App() {
       <div className="relative">
         <Navigation />
         
-        {/* Error Fixed: Prop 'onOpenVSL' removed to match Hero.tsx component definition */}
         <Hero />
         
         <div id="demo">
